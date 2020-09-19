@@ -1,17 +1,105 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" href="css/libs.min.css">
-        <link rel="stylesheet" href="css/style.min.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body>
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
-    <script src="js/libs.min.js"></script>    
-    <script src="js/main.min.js"></script>   
-    </body>
-    </html>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__inner header__inner--top">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="registration">
+                        <button class="registration__btn" type="button">Become a Seller</button>
+                    </div>
+                    <div class="box">
+                        <a href="#" class="box__link">
+                            <span class="lnr lnr-alarm"></span> 
+                            <span class="box__circle box__circle--alarm">25</span>
+                        </a>
+                        <a href="#" class="box__link">
+                            <span class="lnr lnr-envelope"></span> 
+                            <span class="box__circle box__circle--envelope">6</span>
+                        </a>
+                        <a href="#" class="box__link">
+                            <span class="lnr lnr-cart"></span> 
+                            <span class="box__circle box__circle--cart">2</span>
+                        </a>
+                        <a href="#" class="user">
+                            <div class="user__photo" style="background-image: url(images/Taofiq_Hakim.jpg); width: 50px; height: 50px;"></div>
+                            <div class="user__name">
+                            Taofiq Hakim <span class="user__money">$20.45</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__inner header__inner--menu">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="list">
+                                <a class="list__link" href="#">
+                                    home
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list__link" href="#">
+                                    all products
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list__link" href="#">
+                                    wordpress
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list__link" href="#">
+                                    festures
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a class="list__link" href="#">
+                                    pages
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="search">
+                        <input class="search__input" type="text" placeholder="Search product here..." required>
+                        <button class="search__btn" type="submit" name="search">
+                            <span class="lnr lnr-magnifier"></span>                         
+                        </button>                       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="info">
+            <div class="container">
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
