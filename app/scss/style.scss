@@ -168,3 +168,67 @@
        }
     }
 }
+
+.info {  
+    min-height: 724px;
+    width: 100%;
+    background: #2b2b2b;
+    background: linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);
+    opacity: 0.8;
+    &__inner {
+        padding: 112px 0 100px;         
+        text-align: center;      
+        color: #f3f3f8;
+    }    
+    &__title {
+        font-size: 60px;
+        line-height: 70px;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        &-text {
+            font-weight: 700;
+            display: block;
+            letter-spacing: 1.5px;                       
+        }
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 50px;
+        word-spacing: 2.2px;
+        margin-bottom: 52px;
+    }
+    &__btn {
+        &-products {
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        max-width: 190px;
+        min-height: 53px;
+        border-radius: 26px;
+        margin: 0 13px;
+        padding: 0 30px;
+        border: 1px solid $color-white;
+        line-height: 53px;
+        cursor: pointer;
+        &--all {
+            color: $color-blue;
+            background-color: $color-white;
+        }
+        &--popular {
+            color: $color-white;
+            background-color: rgba(0, 0, 0, 0.1);         
+        }
+        }
+    }
+}
+
+
+
+
+  
+  
+  
+
+  
+
+
+  
