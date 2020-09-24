@@ -312,9 +312,52 @@
             }
         }   
     }
+    &__features {
+        min-height: 710px;
+        &-inner {
+            margin: 188px 0 121px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }        
+        .function {
+            border-radius: 4px;
+            max-width: 361px;
+            min-height: 403px;
+            text-align: center;
+            padding-top: 45px;
+            color: #2b2b2b;
+            &:hover {
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+            }
+            &__img {
+                width: 112px;
+                height: 113px;
+                margin-bottom: 23px;
+            }
+            &__title {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            &__text {
+                padding: 0 30px;
+            }
+        }
+    }
 }
 
+.Layer_65 {
+    background-image: url("Layer 65.png");
+    position: absolute;
+    left: 515px;
+    top: 1136px;
+    
+    z-index: 706;
+  }
+  
 
+
+  
   
 
   
