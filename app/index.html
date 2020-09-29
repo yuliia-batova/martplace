@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -23,18 +24,18 @@
                     <div class="registration">
                         <button class="registration__btn" type="button">Become a Seller</button>
                     </div>
-                    <div class="box">
-                        <a href="#" class="box__link">
+                    <div class="box__inner">
+                        <a href="#" class="inner__link">
                             <span class="lnr lnr-alarm"></span>
-                            <span class="box__circle box__circle--alarm">25</span>
+                            <span class="circle circle__alarm">25</span>
                         </a>
-                        <a href="#" class="box__link">
+                        <a href="#" class="inner__link">
                             <span class="lnr lnr-envelope"></span>
-                            <span class="box__circle box__circle--envelope">6</span>
+                            <span class="circle circle__envelope">6</span>
                         </a>
-                        <a href="#" class="box__link">
+                        <a href="#" class="inner__link">
                             <span class="lnr lnr-cart"></span>
-                            <span class="box__circle box__circle--cart">2</span>
+                            <span class="circle circle__cart">2</span>
                         </a>
                         <a href="#" class="user">
                             <div class="user__photo"
@@ -98,9 +99,9 @@
                         <div class="info__inner">
                             <p class="info__title">
                                 Create Your Own
-                                <span class="info__title-text">Digital Product Marketplace</span>
+                                <span class="info__text">Digital Product Marketplace</span>
                             </p>
-                            <p class="info__text">
+                            <p class="info__about">
                                 MartPlace is the most powerful, & customizable template for Easy Digital Downloads
                                 Products
                             </p>
@@ -118,8 +119,8 @@
                 <section class="box__features">
                     <div class="container">
                         <div class="box__features-inner">
-                            <div class="function">                                   
-                                <img class="function__img" src="images/best_reseacher.png" alt="Notes in a notebook">                                 
+                            <div class="function">
+                                <img class="function__img" src="images/best_reseacher.png" alt="Notes in a notebook">
                                 <div class="function__title">
                                     Best UX Research
                                 </div>
@@ -130,7 +131,8 @@
                                 </div>
                             </div>
                             <div class="function">
-                                <img class="function__img" src="images/fully_responsive.png" alt="Designing on the wall from a laptop">   
+                                <img class="function__img" src="images/fully_responsive.png"
+                                    alt="Designing on the wall from a laptop">
                                 <div class="function__title">
                                     Fully Responsive
                                 </div>
@@ -138,52 +140,166 @@
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the mattis, leo quam aliquet diam
                                     congue is laoreet elit metus.
-                                </div>   
-                            </div>                         
+                                </div>
+                            </div>
                             <div class="function">
-                                <img class="function__img" src="images/easily.png" alt="Transferring files between smartphones">   
+                                <img class="function__img" src="images/easily.png"
+                                    alt="Transferring files between smartphones">
                                 <div class="function__title">
                                     Buy & Sell Easily
                                 </div>
                                 <div class="function__text">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the mattis, leo quam aliquet diam
-                                    congue is laoreet elit metus. 
-                                </div>                            
+                                    congue is laoreet elit metus.
+                                </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </section>
             </section>
-            <section class="search desc">               
+            <section class="search desc">
                 <div class="search__inner">
                     <div class="search__box search__box-one desc ">
-                    <form class="search__form">
-                        <div class="search__form-inner">
-                        <label class="search__form-label" for="search__label"></label>
-                            <input id="search__label" class="search__form-input" type="text" placeholder="Search your products..." required>                        
-                            <select class="search__form-select" name="All_Categories">
-                                <option selected>All Categories</option>
-                                <!-- <option value="one"></option>
-                                <option value="two"></option> -->                                
-                            </select>   
-                            <span class="lnr lnr-chevron-down"></span>
-                        </div>                     
-                        <button class="search__form-btn" type="submit" name="search">
-                            Search Now
-                        </button>                    
-                    </form>
+                        <form class="search__form">
+                            <div class="search__form-inner">
+                                <label class="search__form-label" for="search__label"></label>
+                                <input id="search__label" class="search__form-input" type="text"
+                                    placeholder="Search your products..." required>
+                                <select class="search__form-select" name="All_Categories">
+                                    <option selected>All Categories</option>
+                                    <!-- <option value="one"></option>
+                                <option value="two"></option> -->
+                                </select>
+                                <span class="lnr lnr-chevron-down"></span>
+                            </div>
+                            <button class="search__form-btn" type="submit" name="search">
+                                Search Now
+                            </button>
+                        </form>
                     </div>
                     <div class="search__box search__box-two desc "></div>
                     <div class="search__box search__box-three desc "></div>
-                </div>                
+                </div>
             </section>
         </section>
+        <section class="slider">
+            <div class="container">
+                <div class="slider__products-inner">
+                    <div class="slider__products-title">
+                    <div class="slider__products-text title">
+                        Weekly Featured Products                        
+                    </div>
+                    <button class="slider__products-btn"></button>
+                    </div>
+                    <div class="slider__products-wrapp">
+                        <article class="product">
+                            <a href="#" class="product__bgimg"
+                                style="background-image: url(images/page_template.jpg);"></a>
+                            <div class="product__content">
+                                <a href="#" class="product__title">
+                                    One Page Resume Template
+                                </a>
+                                <div href="#" class="avtor">
+                                    <a class="avtor__photo"
+                                        style="background-image: url(images/AazzTech.JPG); width: 30px; height: 30px;">
+                                    </a>
+                                    <a class="avtor__name">
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="avtor__engine avtor__engine--img">WordPress</a>
+                                </div>
+                                <p class="product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                    scelerisque.
+                                </p>
+                                <div class="product__category">
+                                    <a href="#" class="category category__website">website</a>
+                                    <a href="#" class="category category__plugin">plugin</a>
+                                    <a href="#" class="category category__landing">landing page</a>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__price">
+                                        <button class="price__btn" type="button">
+                                            $10 - $50
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">46</span>
+                                            </div>
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-cart"></span>
+                                                <span class="statistics__text-cart">634</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating"></div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product">
+                            <a href="#" class="product__bgimg"
+                                style="background-image: url(images/page_template.jpg);"></a>
+                            <div class="product__content">
+                                <a href="#" class="product__title">
+                                    One Page Resume Template
+                                </a>
+                                <div href="#" class="avtor">
+                                    <a class="avtor__photo"
+                                        style="background-image: url(images/AazzTech.JPG); width: 30px; height: 30px;">
+                                    </a>
+                                    <a class="avtor__name">
+                                        AazzTech
+                                    </a>
+                                    <a href="#" class="avtor__engine avtor__engine--img">WordPress</a>
+                                </div>
+                                <p class="product__desc">
+                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                                    the
+                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
+                                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
+                                    scelerisque.
+                                </p>
+                                <div class="product__category">
+                                    <a href="#" class="category category__website">website</a>
+                                    <a href="#" class="category category__plugin">plugin</a>
+                                    <a href="#" class="category category__landing">landing page</a>
+                                </div>
+                                <div class="product__info">
+                                    <div class="product__price">
+                                        <button class="price__btn" type="button">
+                                            $10 - $50
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">46</span>
+                                            </div>
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-cart"></span>
+                                                <span class="statistics__text-cart">634</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
