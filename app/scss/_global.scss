@@ -45,13 +45,25 @@ body {
     font-family: 'Linearicons-Free';
 }
 
+.products__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;    
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);  
+    background-color: $color-white;
+} 
 .title {
     font-size: 30px;    
-    color: $color-black;
-    // background-color: $color-white;
+    color: $color-black;    
     min-height: 110px;
     padding-left: 30px;
     padding-top: 40px;    
+}
+
+button {
+    outline-width: 0;
 }
 
 

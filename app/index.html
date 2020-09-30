@@ -183,46 +183,48 @@
                 </div>
             </section>
         </section>
-        <section class="slider">
+        <section class="featured">
             <div class="container">
-                <div class="slider__products-inner">
-                    <div class="slider__products-title">
-                    <div class="slider__products-text title">
-                        Weekly Featured Products                        
+                <div class="products">
+                    <div class="products__title">
+                        <div class="products__title-text title">
+                            Weekly Featured Products
+                        </div>
+                        <button class="products__title-btn"></button>
                     </div>
-                    <button class="slider__products-btn"></button>
-                    </div>
-                    <div class="slider__products-wrapp">
-                        <article class="product">
-                            <a href="#" class="product__bgimg"
+                    <div class="products__inner products__inner--slider">
+                        <!-- product__flex для установки свойства display:flex -->
+                        <article class="product product__flex">
+                            <!-- в этом блоке размер картинки больше, чем в след. -->
+                            <a href="#" class="product__bgimg product__bgimg--size"
                                 style="background-image: url(images/page_template.jpg);"></a>
                             <div class="product__content">
-                                <a href="#" class="product__title">
+                                <a href="#" class="product__content-title">
                                     One Page Resume Template
                                 </a>
-                                <div href="#" class="avtor">
-                                    <a class="avtor__photo"
+                                <div href="#" class="product__content-avtor">
+                                    <a class="photo"
                                         style="background-image: url(images/AazzTech.JPG); width: 30px; height: 30px;">
                                     </a>
-                                    <a class="avtor__name">
+                                    <a class="name">
                                         AazzTech
                                     </a>
-                                    <a href="#" class="avtor__engine avtor__engine--img">WordPress</a>
+                                    <a href="#" class="engine engine__img-wordpress">WordPress</a>
                                 </div>
-                                <p class="product__desc">
+                                <p class="product__content-desc">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the
                                     mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
                                     Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
                                     scelerisque.
                                 </p>
-                                <div class="product__category">
+                                <div class="product__content-category">
                                     <a href="#" class="category category__website">website</a>
                                     <a href="#" class="category category__plugin">plugin</a>
                                     <a href="#" class="category category__landing">landing page</a>
                                 </div>
-                                <div class="product__info">
-                                    <div class="product__price">
+                                <div class="product__content-info">
+                                    <div class="price">
                                         <button class="price__btn" type="button">
                                             $10 - $50
                                         </button>
@@ -241,36 +243,37 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="product">
-                            <a href="#" class="product__bgimg"
+                        <article class="product product__flex">
+                            <!-- в этом блоке размер картинки больше, чем в след. -->
+                            <a href="#" class="product__bgimg product__bgimg--size"
                                 style="background-image: url(images/page_template.jpg);"></a>
                             <div class="product__content">
-                                <a href="#" class="product__title">
+                                <a href="#" class="product__content-title">
                                     One Page Resume Template
                                 </a>
-                                <div href="#" class="avtor">
-                                    <a class="avtor__photo"
+                                <div href="#" class="product__content-avtor">
+                                    <a class="photo"
                                         style="background-image: url(images/AazzTech.JPG); width: 30px; height: 30px;">
                                     </a>
-                                    <a class="avtor__name">
+                                    <a class="name">
                                         AazzTech
                                     </a>
-                                    <a href="#" class="avtor__engine avtor__engine--img">WordPress</a>
+                                    <a href="#" class="engine engine__img">WordPress</a>
                                 </div>
-                                <p class="product__desc">
+                                <p class="product__content-desc">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the
                                     mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
                                     Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
                                     scelerisque.
                                 </p>
-                                <div class="product__category">
+                                <div class="product__content-category">
                                     <a href="#" class="category category__website">website</a>
                                     <a href="#" class="category category__plugin">plugin</a>
                                     <a href="#" class="category category__landing">landing page</a>
                                 </div>
-                                <div class="product__info">
-                                    <div class="product__price">
+                                <div class="product__content-info">
+                                    <div class="price">
                                         <button class="price__btn" type="button">
                                             $10 - $50
                                         </button>
@@ -293,7 +296,345 @@
                 </div>
             </div>
         </section>
-
+        <section class="release">
+            <div class="container">
+                <div class="products">
+                    <div class="products__title indent__title">
+                        <div class="products__title-text title">
+                            Newest Release Products
+                        </div>
+                        <div class="products__title-filter">
+                            Filter by:
+                            <button type="button" class="title__btn">
+                                <img src="images/filter.svg" alt="filter">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="products__box">
+                        <div class="product__category product__category--mix">
+                            <button type="button" class="category mix__plugin" data-filter="all">Plugins</button>
+                            <button type="button" class="category" data-filter=".category-wordpress">WordPress</button>
+                            <button type="button" class="category" data-filter=".category-sitetemplete">Site Template</button>
+                            <button type="button" class="category" data-filter=".category-psdtemplete">PSD Template</button>
+                            <button type="button" class="category" data-filter=".category-joomla">Joomla</button>
+                            <button type="button" class="category" data-filter=".category-userinterface">User Interface</button>
+                            <button type="button" class="category" data-filter=".category-landing">landing page</button>
+                            <button type="button" class="category" data-filter=".category-software">Software</button>
+                        </div>
+                        <div class="products__inner products__inner--flex">
+                            <article class="product font__product mix category-wordpress">
+                                <div class="product__link">
+                                    <a href="#" class="product__bgimg"
+                                        style="background-image: url(images/page_template.jpg);"></a>
+                                    <div class="product__bgimg-link">
+                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                                            More Info
+                                        </button>
+                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                            Live Demo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__content indent__content">
+                                    <a href="#" class="product__content-title font__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+                                    <div href="#" class="product__content-avtor">
+                                        <a class="photo indent__photo"
+                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                        </a>
+                                        <a class="name indent__name">
+                                            Theme-Valley
+                                        </a>
+                                        <a href="#" class="engine engine__img-wordpress indent__img">Plugin</a>
+                                    </div>
+                                    <p class="product__content-desc indent__desc">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </p>
+                                </div>
+                                <div class="product__content-info indent__info">
+                                    <div class="price">
+                                        <button class="price__btn font__price" type="button">
+                                            $20
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">90</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="statistics__link">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="statistics__text-cart">246</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product font__product mix category-psdtemplete">
+                                <div class="product__link">
+                                    <a href="#" class="product__bgimg"
+                                        style="background-image: url(images/page_template.jpg);"></a>
+                                    <div class="product__bgimg-link">
+                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                                            More Info
+                                        </button>
+                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                            Live Demo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__content indent__content">
+                                    <a href="#" class="product__content-title font__title">
+                                        Marketify Coffee Shop
+                                    </a>
+                                    <div href="#" class="product__content-avtor">
+                                        <a class="photo indent__photo"
+                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                        </a>
+                                        <a class="name indent__name">
+                                            EchoTheme
+                                        </a>
+                                        <a href="#" class="engine engine__img-psd indent__img">PSD</a>
+                                    </div>
+                                    <p class="product__content-desc indent__desc">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </p>
+                                </div>
+                                <div class="product__content-info indent__info">
+                                    <div class="price">
+                                        <button class="price__btn font__price" type="button">
+                                            $18
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">48</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="statistics__link">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="statistics__text-cart">50</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product font__product mix category-sitetemplete">
+                                <div class="product__link">
+                                    <a href="#" class="product__bgimg"
+                                        style="background-image: url(images/page_template.jpg);"></a>
+                                    <div class="product__bgimg-link">
+                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                                            More Info
+                                        </button>
+                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                            Live Demo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__content indent__content">
+                                    <a href="#" class="product__content-title font__title">
+                                        Bryson - Portfolio Template
+                                    </a>
+                                    <div href="#" class="product__content-avtor">
+                                        <a class="photo indent__photo"
+                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                        </a>
+                                        <a class="name indent__name">
+                                            Artcorner
+                                        </a>
+                                        <a href="#" class="engine engine__img-html indent__img">HTML</a>
+                                    </div>
+                                    <p class="product__content-desc indent__desc">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </p>
+                                </div>
+                                <div class="product__content-info indent__info">
+                                    <div class="price">
+                                        <button class="price__btn font__price" type="button">
+                                            $10
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">56</span>
+                                            </div>
+                                            <div class="rating"></div>
+                                        </div>
+                                    </div>
+                                    <div class="statistics__link">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="statistics__text-cart">68</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product font__product mix category-wordpress category-popular">
+                                <div class="product__link">
+                                    <a href="#" class="product__bgimg"
+                                        style="background-image: url(images/page_template.jpg);"></a>
+                                    <div class="product__bgimg-link">
+                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                                            More Info
+                                        </button>
+                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                            Live Demo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__content indent__content">
+                                    <a href="#" class="product__content-title font__title">
+                                        E-commerce Shopping Cart
+                                    </a>
+                                    <div href="#" class="product__content-avtor">
+                                        <a class="photo indent__photo"
+                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                        </a>
+                                        <a class="name indent__name">
+                                            Design-Hub
+                                        </a>
+                                        <a href="#" class="engine engine__img-wordpress indent__img">Plugin</a>
+                                    </div>
+                                    <p class="product__content-desc indent__desc">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </p>
+                                </div>
+                                <div class="product__content-info indent__info">
+                                    <div class="price">
+                                        <button class="price__btn font__price" type="button">
+                                            $10-50
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">90</span>
+                                            </div>
+                                            <div class="rating"></div>
+                                        </div>
+                                    </div>
+                                    <div class="statistics__link">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="statistics__text-cart">45</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product font__product mix category-psdtemplete">
+                                <div class="product__link">
+                                    <a href="#" class="product__bgimg"
+                                        style="background-image: url(images/page_template.jpg);"></a>
+                                    <div class="product__bgimg-link">
+                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                                            More Info
+                                        </button>
+                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                            Live Demo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__content indent__content">
+                                    <a href="#" class="product__content-title font__title">
+                                        Marketify Coffee Shop
+                                    </a>
+                                    <div href="#" class="product__content-avtor">
+                                        <a class="photo indent__photo"
+                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                        </a>
+                                        <a class="name indent__name">
+                                            AazzTech
+                                        </a>
+                                        <a href="#" class="engine engine__img-psd indent__img">PSD</a>
+                                    </div>
+                                    <p class="product__content-desc indent__desc">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </p>
+                                </div>
+                                <div class="product__content-info indent__info">
+                                    <div class="price">
+                                        <button class="price__btn font__price" type="button">
+                                            $10-50
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">48</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="statistics__link">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="statistics__text-cart">50</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="product font__product mix category-landing category-popular">
+                                <div class="product__link">
+                                    <a href="#" class="product__bgimg"
+                                        style="background-image: url(images/page_template.jpg);"></a>
+                                    <div class="product__bgimg-link">
+                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                                            More Info
+                                        </button>
+                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                            Live Demo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__content indent__content">
+                                    <a href="#" class="product__content-title font__title">
+                                        Bryson - Portfolio Template
+                                    </a>
+                                    <div href="#" class="product__content-avtor">
+                                        <a class="photo indent__photo"
+                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                        </a>
+                                        <a class="name indent__name">
+                                            Coder-Lab
+                                        </a>
+                                        <a href="#" class="engine engine__img-html indent__img">HTML</a>
+                                    </div>
+                                    <p class="product__content-desc indent__desc">
+                                        Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
+                                        scelerisque
+                                        the mattis, leo quam aliquet congue.
+                                    </p>
+                                </div>
+                                <div class="product__content-info indent__info">
+                                    <div class="price">
+                                        <button class="price__btn font__price" type="button">
+                                            $10
+                                        </button>
+                                        <div class="statistics">
+                                            <div class="statistics__link">
+                                                <span class="lnr lnr-heart"></span>
+                                                <span class="statistics__text-heart">56</span>
+                                            </div>
+                                            <div class="rating"></div>
+                                        </div>
+                                    </div>
+                                    <div class="statistics__link">
+                                        <span class="lnr lnr-cart"></span>
+                                        <span class="statistics__text-cart">68</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="products__box-new">
+                            <button type="button" data-filter=".category-popular" class="products__box-button">
+                                All New Products
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
