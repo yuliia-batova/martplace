@@ -8,83 +8,84 @@
     <title>MartPlace</title>
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">  
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container">
-                <div class="header__inner header__inner--top">
-                    <div class="logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="logo">
+            <div class="container">                
+                <div class="header__inner">
+                    <a class="logo" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <a class="btn btn--blue header__btn" href="#">
+                        Become a Seller
+                    </a>
+                    <div class="header__info">
+                        <a href="#" class="header__link">
+                            <span class="lnr lnr-alarm header__icon"></span>
+                            <span class="header__notif header__notif--tomato">25</span>
+                        </a>
+                        <a href="#" class="header__link">
+                            <span class="lnr lnr-envelope header__icon"></span>
+                            <span class="header__notif header__notif--green">6</span>
+                        </a>
+                        <a href="#" class="header__link">
+                            <span class="lnr lnr-cart header__icon"></span>
+                            <span class="header__notif header__notif--blue">2</span>
                         </a>
                     </div>
-                    <div class="registration">
-                        <button class="registration__btn" type="button">Become a Seller</button>
-                    </div>
-                    <div class="box__inner">
-                        <a href="#" class="inner__link">
-                            <span class="lnr lnr-alarm"></span>
-                            <span class="circle circle__alarm">25</span>
-                        </a>
-                        <a href="#" class="inner__link">
-                            <span class="lnr lnr-envelope"></span>
-                            <span class="circle circle__envelope">6</span>
-                        </a>
-                        <a href="#" class="inner__link">
-                            <span class="lnr lnr-cart"></span>
-                            <span class="circle circle__cart">2</span>
-                        </a>
-                        <a href="#" class="user">
-                            <div class="user__photo"
-                                style="background-image: url(images/Taofiq_Hakim.jpg); width: 50px; height: 50px;">
-                            </div>
-                            <div class="user__name">
-                                Taofiq Hakim <span class="user__money">$20.45</span>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#" class="user">
+                        <span class="user__photo" style="background-image: url(images/Taofiq_Hakim.jpg);"></span>                       
+                        <span class="user__name">
+                            Taofiq Hakim <span class="user__money">$20.45</span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="header__menu">
             <div class="container">
-                <div class="header__inner header__inner--menu">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="list">
-                                <a class="list__link" href="#">
+                <div class="header__inner">
+                    <nav class="header__nav">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     home
                                 </a>
                             </li>
-                            <li class="list">
-                                <a class="list__link" href="#">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     all products
                                 </a>
                             </li>
-                            <li class="list">
-                                <a class="list__link" href="#">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     wordpress
                                 </a>
                             </li>
-                            <li class="list">
-                                <a class="list__link" href="#">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     festures
                                 </a>
                             </li>
-                            <li class="list">
-                                <a class="list__link" href="#">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">
                                     pages
                                 </a>
                             </li>
                         </ul>
                     </nav>
                     <form class="header__search">
-                        <input class="header__search-input" type="text" placeholder="Search product here..." required>
-                        <button class="header__search-btn" type="submit" name="search">
-                            <span class="lnr lnr-magnifier"></span>
+                        <label for="search-1" class="header__search-lbl">
+                            <span class="visually-hidden">Search product here...</span>
+                        </label>
+                        <input class="header__search-input" id="search-1" name="header__search" type="search"
+                            placeholder="Search product here..." required>
+                        <button class="header__search-btn" type="submit">
+                            <span class="lnr lnr-magnifier header__icon header__icon--font"></span>
+                            <span class="visually-hidden">Go</span>
                         </button>
                     </form>
                 </div>
@@ -92,205 +93,156 @@
         </div>
     </header>
     <main>
-        <section class="box">
-            <section class="box__info desc">
-                <section class="info">
-                    <div class="container">
-                        <div class="info__inner">
-                            <p class="info__title">
-                                Create Your Own
-                                <span class="info__text">Digital Product Marketplace</span>
-                            </p>
-                            <p class="info__about">
-                                MartPlace is the most powerful, & customizable template for Easy Digital Downloads
-                                Products
-                            </p>
-                            <div class="info__btn">
-                                <button class="info__btn-products info__btn-products--all" type="button">
-                                    View All Products
-                                </button>
-                                <button class="info__btn-products info__btn-products--popular" type="button">
-                                    Popular Products
-                                </button>
-                            </div>
-                        </div>
+        <section class="intro">
+            <div class="container">
+                <div class="intro__header">
+                    <p class="intro__title">
+                        Create Your Own
+                        <span class="intro__title intro__title--size">
+                            Digital Product Marketplace
+                        </span>
+                    </p>
+                    <p class="intro__desc">
+                        MartPlace is the most powerful, & customizable template for Easy Digital Downloads
+                        Products
+                    </p>
+                    <div class="intro__link">
+                        <a class="btn btn--white btn--big intro__link-products">
+                            View All Products
+                        </a>
+                        <a class="btn btn--transp btn--big intro__link-products">
+                            Popular Products
+                        </a>
                     </div>
-                </section>
-                <section class="box__features">
-                    <div class="container">
-                        <div class="box__features-inner">
-                            <div class="function">
-                                <img class="function__img" src="images/best_reseacher.png" alt="Notes in a notebook">
-                                <div class="function__title">
-                                    Best UX Research
-                                </div>
-                                <div class="function__text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the mattis, leo quam aliquet diam
-                                    congue is laoreet elit metus.
-                                </div>
-                            </div>
-                            <div class="function">
-                                <img class="function__img" src="images/fully_responsive.png"
-                                    alt="Designing on the wall from a laptop">
-                                <div class="function__title">
-                                    Fully Responsive
-                                </div>
-                                <div class="function__text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the mattis, leo quam aliquet diam
-                                    congue is laoreet elit metus.
-                                </div>
-                            </div>
-                            <div class="function">
-                                <img class="function__img" src="images/easily.png"
-                                    alt="Transferring files between smartphones">
-                                <div class="function__title">
-                                    Buy & Sell Easily
-                                </div>
-                                <div class="function__text">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the mattis, leo quam aliquet diam
-                                    congue is laoreet elit metus.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section class="search desc">
-                <div class="search__inner">
-                    <div class="search__box search__box-one desc ">
-                        <form class="search__form">
-                            <div class="search__form-inner">
-                                <label class="search__form-label" for="search__label"></label>
-                                <input id="search__label" class="search__form-input" type="text"
-                                    placeholder="Search your products..." required>
-                                <select class="search__form-select" name="All_Categories">
-                                    <option selected>All Categories</option>
-                                    <!-- <option value="one"></option>
-                                <option value="two"></option> -->
-                                </select>
-                                <span class="lnr lnr-chevron-down"></span>
-                            </div>
-                            <button class="search__form-btn" type="submit" name="search">
-                                Search Now
-                            </button>
-                        </form>
-                    </div>
-                    <div class="search__box search__box-two desc "></div>
-                    <div class="search__box search__box-three desc "></div>
                 </div>
-            </section>
+                <div class="intro__search">
+                    <form class="intro__search-form">
+                        <label for="search-2" class="intro__search-lbl">
+                            <span class="visually-hidden">Search your products...</span>
+                        </label>
+                        <input class="intro__search-input" id="search-2" name="intro__search" type="search"
+                            placeholder="Search your products..." required>
+                        <select class="intro__search-select" name="All_Categories"
+                            style="background-image: url(images/drop-down.svg);">
+                            <option selected>All Categories</option>
+                        </select>
+                        <button class="intro__search-btn" type="submit" name="intro__btn">
+                            Search Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="container">
+                <div class="features__inner">
+                    <div class="features__item">
+                        <div class="features__item-img" style="background-image: url(images/best_reseacher.png);"></div>
+                        <div class="features__item-title">
+                            Best UX Research
+                        </div>
+                        <p class="features__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                    <div class="features__item">
+                        <div class="features__item-img" style="background-image: url(images/fully_responsive.png);">
+                        </div>
+                        <div class="features__item-title">
+                            Fully Responsive
+                        </div>
+                        <p class="features__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                    <div class="features__item">
+                        <div class="features__item-img" style="background-image: url(images/easily.png);"></div>
+                        <div class="features__item-title">
+                            Buy & Sell Easily
+                        </div>
+                        <p class="features__item-text">
+                            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                            the mattis, leo quam aliquet diam
+                            congue is laoreet elit metus.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="featured">
             <div class="container">
-                <div class="products">
-                    <div class="products__title">
-                        <div class="products__title-text title">
+                <div class="slider">
+                    <div class="caption slider__caption">
+                        <span class="topic slider__topic">
                             Weekly Featured Products
-                        </div>
-                        <button class="products__title-btn"></button>
+                        </span>
+                        <span class="slider__arrows"></span>
                     </div>
-                    <div class="products__inner products__inner--slider">
-                        <!-- product__flex для установки свойства display:flex -->
-                        <article class="product product__flex">
-                            <!-- в этом блоке размер картинки больше, чем в след. -->
-                            <a href="#" class="product__bgimg product__bgimg--size"
-                                style="background-image: url(images/page_template.jpg);"></a>
-                            <div class="product__content">
-                                <a href="#" class="product__content-title">
+                    <div class="slider__inner">
+                        <article class="slider__product">
+                            <div class="slider__header">
+                                <img class="slider__img" src="images/page_template.jpg" alt="Page template">
+                                <div class="hover slider__hover">
+                                    <a class="btn btn--transp btn--middle slider__hover-btn">
+                                        More Info
+                                    </a>
+                                    <a class="btn btn--white btn--middle slider__hover-btn">
+                                        Live Demo
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <a href="#" class="title slider__title">
                                     One Page Resume Template
                                 </a>
-                                <div href="#" class="product__content-avtor">
-                                    <a class="photo"
-                                        style="background-image: url(images/AazzTech.JPG); width: 30px; height: 30px;">
+                                <div href="#" class="slider__author">
+                                    <a href="#" class="user">
+                                        <span class="user__photo slider__photo"
+                                            style="background-image: url(images/AazzTech.JPG);"></span>
+                                        <span class="user__name slider__name">
+                                            AazzTech
+                                        </span>
                                     </a>
-                                    <a class="name">
-                                        AazzTech
+                                    <a href="#" class="user">
+                                        <span class="user__photo slider__category"
+                                            style="background-image: url(images/wordpress.svg);"></span>
+                                        <span class="user__name slider__designation">
+                                            WordPress
+                                        </span>
                                     </a>
-                                    <a href="#" class="engine engine__img-wordpress">WordPress</a>
                                 </div>
-                                <p class="product__content-desc">
+                                <p class="slider__desc">
                                     Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                                     the
                                     mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
                                     Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
                                     scelerisque.
                                 </p>
-                                <div class="product__content-category">
-                                    <a href="#" class="category category__website">website</a>
-                                    <a href="#" class="category category__plugin">plugin</a>
-                                    <a href="#" class="category category__landing">landing page</a>
-                                </div>
-                                <div class="product__content-info">
-                                    <div class="price">
-                                        <button class="price__btn" type="button">
-                                            $10 - $50
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">46</span>
-                                            </div>
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-cart"></span>
-                                                <span class="statistics__text-cart">634</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rating"></div>
-                                </div>
                             </div>
-                        </article>
-                        <article class="product product__flex">
-                            <!-- в этом блоке размер картинки больше, чем в след. -->
-                            <a href="#" class="product__bgimg product__bgimg--size"
-                                style="background-image: url(images/page_template.jpg);"></a>
-                            <div class="product__content">
-                                <a href="#" class="product__content-title">
-                                    One Page Resume Template
-                                </a>
-                                <div href="#" class="product__content-avtor">
-                                    <a class="photo"
-                                        style="background-image: url(images/AazzTech.JPG); width: 30px; height: 30px;">
-                                    </a>
-                                    <a class="name">
-                                        AazzTech
-                                    </a>
-                                    <a href="#" class="engine engine__img">WordPress</a>
-                                </div>
-                                <p class="product__content-desc">
-                                    Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                                    the
-                                    mattis, leo quam aliquet congue placerat mi id nisi interdum mollis.
-                                    Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue justo ut
-                                    scelerisque.
-                                </p>
-                                <div class="product__content-category">
-                                    <a href="#" class="category category__website">website</a>
-                                    <a href="#" class="category category__plugin">plugin</a>
-                                    <a href="#" class="category category__landing">landing page</a>
-                                </div>
-                                <div class="product__content-info">
-                                    <div class="price">
-                                        <button class="price__btn" type="button">
-                                            $10 - $50
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">46</span>
-                                            </div>
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-cart"></span>
-                                                <span class="statistics__text-cart">634</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rating"></div>
-                                </div>
+                            <div class="slider__tags">
+                                <a href="#" class="btn btn--sm btn--gray slider__tag">website</a>
+                                <a href="#" class="btn btn--sm btn--gray slider__tag">plugin</a>
+                                <a href="#" class="btn btn--sm btn--gray slider__tag">landing page</a>
                             </div>
+                            <div class="slider__footer">
+                                <span class="slider__price">
+                                    $10-$50
+                                </span>
+                                <button class="slider__favorite" type="button">
+                                    <span class="lnr lnr-heart slider__heart"></span>
+                                    <span class="slider__counter slider__counter--grey">46</span>
+                                    <span class="visually-hidden">Add to favorite</span>
+                                </button>
+                                <button class="slider__basket" type="button">
+                                    <span class="lnr lnr-cart slider__cart"></span>
+                                    <span class="slider__counter slider__counter--blue">634</span>
+                                    <span class="visually-hidden">Add to basket</span>
+                                </button>
+                                <span class="rating"></span>
                         </article>
                     </div>
                 </div>
@@ -299,338 +251,361 @@
         <section class="release">
             <div class="container">
                 <div class="products">
-                    <div class="products__title indent__title">
-                        <div class="products__title-text title">
+                    <div class="caption products__caption">
+                        <div class="topic products__topic">
                             Newest Release Products
                         </div>
-                        <div class="products__title-filter">
+                        <button type="button" class="products__filter">
                             Filter by:
-                            <button type="button" class="title__btn">
-                                <img src="images/filter.svg" alt="filter">
-                            </button>
-                        </div>
+                        </button>
                     </div>
                     <div class="products__box">
                         <div class="product__category product__category--mix">
                             <button type="button" class="category mix__plugin" data-filter="all">Plugins</button>
                             <button type="button" class="category" data-filter=".category-wordpress">WordPress</button>
-                            <button type="button" class="category" data-filter=".category-sitetemplete">Site Template</button>
-                            <button type="button" class="category" data-filter=".category-psdtemplete">PSD Template</button>
+                            <button type="button" class="category" data-filter=".category-sitetemplete">Site
+                                Template</button>
+                            <button type="button" class="category" data-filter=".category-psdtemplete">PSD
+                                Template</button>
                             <button type="button" class="category" data-filter=".category-joomla">Joomla</button>
-                            <button type="button" class="category" data-filter=".category-userinterface">User Interface</button>
+                            <button type="button" class="category" data-filter=".category-userinterface">User
+                                Interface</button>
                             <button type="button" class="category" data-filter=".category-landing">landing page</button>
                             <button type="button" class="category" data-filter=".category-software">Software</button>
                         </div>
                         <div class="products__inner products__inner--flex">
-                            <article class="product font__product mix category-wordpress">
-                                <div class="product__link">
-                                    <a href="#" class="product__bgimg"
-                                        style="background-image: url(images/page_template.jpg);"></a>
-                                    <div class="product__bgimg-link">
-                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                            <article class="product mix category-wordpress">
+                                <div class="product__header">
+                                    <img class="product__img" src="images/page_template.jpg" alt="Page template">
+                                    <div class="hover product__hover">
+                                        <a class="btn btn--transp btn--middle product__hover-btn">
                                             More Info
-                                        </button>
-                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                        </a>
+                                        <a class="btn btn--white btn--middle product__hover-btn">
                                             Live Demo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="product__content indent__content">
-                                    <a href="#" class="product__content-title font__title">
+                                <div class="product__content">
+                                    <a href="#" class="title product__title">
                                         E-commerce Shopping Cart
                                     </a>
-                                    <div href="#" class="product__content-avtor">
-                                        <a class="photo indent__photo"
-                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                    <div href="#" class="product__author">
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__photo"
+                                                style="background-image: url(images/ThemeValley.jpg);"></span>
+                                            <span class="user__name product__name">
+                                                Theme-Valley
+                                            </span>
                                         </a>
-                                        <a class="name indent__name">
-                                            Theme-Valley
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__category"
+                                                style="background-image: url(images/wordpress.svg);"></span>
+                                            <span class="user__name product__designation">
+                                                Plugin
+                                            </span>
                                         </a>
-                                        <a href="#" class="engine engine__img-wordpress indent__img">Plugin</a>
                                     </div>
-                                    <p class="product__content-desc indent__desc">
+                                    <p class="desc product__desc">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </p>
                                 </div>
-                                <div class="product__content-info indent__info">
-                                    <div class="price">
-                                        <button class="price__btn font__price" type="button">
-                                            $20
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">90</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="statistics__link">
-                                        <span class="lnr lnr-cart"></span>
-                                        <span class="statistics__text-cart">246</span>
-                                    </div>
+                                <div class="product__footer">
+                                    <span class="product__price">
+                                        $20
+                                    </span>
+                                    <button class="product__favorite" type="button">
+                                        <span class="lnr lnr-heart product__heart"></span>
+                                        <span class="product__counter product__counter--grey">90</span>
+                                        <span class="visually-hidden">Add to favorite</span>
+                                    </button>                                    
+                                    <button class="product__basket" type="button">
+                                        <span class="lnr lnr-cart product__cart"></span>
+                                        <span class="product__counter product__counter--blue">246</span>
+                                        <span class="visually-hidden">Add to basket</span>
+                                    </button>
                                 </div>
                             </article>
-                            <article class="product font__product mix category-psdtemplete">
-                                <div class="product__link">
-                                    <a href="#" class="product__bgimg"
-                                        style="background-image: url(images/page_template.jpg);"></a>
-                                    <div class="product__bgimg-link">
-                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                            <article class="product mix category-psdtemplete">
+                                <div class="product__header">
+                                    <img class="product__img" src="images/page_template.jpg" alt="Page template">
+                                    <div class="product__hover">
+                                        <a class="btn btn--transp btn--middle product__hover-btn">
                                             More Info
-                                        </button>
-                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                        </a>
+                                        <a class="btn btn--white btn--middle product__hover-btn">
                                             Live Demo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="product__content indent__content">
-                                    <a href="#" class="product__content-title font__title">
+                                <div class="product__content">
+                                    <a href="#" class="title product__title">
                                         Marketify Coffee Shop
                                     </a>
-                                    <div href="#" class="product__content-avtor">
-                                        <a class="photo indent__photo"
-                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                    <div href="#" class="product__author">
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__photo"
+                                                style="background-image: url(images/ThemeValley.jpg);"></span>
+                                            <span class="user__name product__name">
+                                                EchoTheme
+                                            </span>
                                         </a>
-                                        <a class="name indent__name">
-                                            EchoTheme
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__category"
+                                                style="background-image: url(images/psd.svg);"></span>
+                                            <span class="user__name product__designation">
+                                                PSD
+                                            </span>
                                         </a>
-                                        <a href="#" class="engine engine__img-psd indent__img">PSD</a>
                                     </div>
-                                    <p class="product__content-desc indent__desc">
+                                    <p class="product__desc">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </p>
                                 </div>
-                                <div class="product__content-info indent__info">
-                                    <div class="price">
-                                        <button class="price__btn font__price" type="button">
-                                            $18
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">48</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="statistics__link">
-                                        <span class="lnr lnr-cart"></span>
-                                        <span class="statistics__text-cart">50</span>
-                                    </div>
-                                </div>
+                                <div class="product__footer">
+                                    <span class="product__price">
+                                        $18
+                                    </span>
+                                    <button class="product__favorite" type="button">
+                                        <span class="lnr lnr-heart product__heart"></span>
+                                        <span class="product__counter product__counter--grey">48</span>
+                                        <span class="visually-hidden">Add to favorite</span>
+                                    </button>                                   
+                                    <button class="product__basket" type="button">
+                                        <span class="lnr lnr-cart product__cart"></span>
+                                        <span class="product__counter product__counter--blue">50</span>
+                                        <span class="visually-hidden">Add to basket</span>
+                                    </button>
+                                </div>    
                             </article>
-                            <article class="product font__product mix category-sitetemplete">
-                                <div class="product__link">
-                                    <a href="#" class="product__bgimg"
-                                        style="background-image: url(images/page_template.jpg);"></a>
-                                    <div class="product__bgimg-link">
-                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                            <article class="product mix category-sitetemplete">
+                                <div class="product__header">
+                                    <img class="product__img" src="images/page_template.jpg" alt="Page template">
+                                    <div class="hover product__hover">
+                                        <a class="btn btn--transp btn--middle product__hover-btn">
                                             More Info
-                                        </button>
-                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                        </a>
+                                        <a class="btn btn--white btn--middle product__hover-btn">
                                             Live Demo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="product__content indent__content">
-                                    <a href="#" class="product__content-title font__title">
+                                <div class="product__content">
+                                    <a href="#" class="title product__title">
                                         Bryson - Portfolio Template
                                     </a>
-                                    <div href="#" class="product__content-avtor">
-                                        <a class="photo indent__photo"
-                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                    <div href="#" class="product__author">
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__photo"
+                                                style="background-image: url(images/ThemeValley.jpg);"></span>
+                                            <span class="user__name product__name">
+                                                Artcorner
+                                            </span>
                                         </a>
-                                        <a class="name indent__name">
-                                            Artcorner
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__category"
+                                                style="background-image: url(images/html.svg);"></span>
+                                            <span class="user__name product__designation">
+                                                HTML
+                                            </span>
                                         </a>
-                                        <a href="#" class="engine engine__img-html indent__img">HTML</a>
                                     </div>
-                                    <p class="product__content-desc indent__desc">
+                                    <p class="product__desc">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </p>
                                 </div>
-                                <div class="product__content-info indent__info">
-                                    <div class="price">
-                                        <button class="price__btn font__price" type="button">
-                                            $10
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">56</span>
-                                            </div>
-                                            <div class="rating"></div>
-                                        </div>
-                                    </div>
-                                    <div class="statistics__link">
-                                        <span class="lnr lnr-cart"></span>
-                                        <span class="statistics__text-cart">68</span>
-                                    </div>
+                                <div class="product__footer">
+                                    <span class="product__price">
+                                        $10
+                                    </span>
+                                    <button class="product__favorite" type="button">
+                                        <span class="lnr lnr-heart product__heart"></span>
+                                        <span class="product__counter product__counter--grey">56</span>
+                                        <span class="visually-hidden">Add to favorite</span>
+                                    </button>
+                                    <span class="rating"></span>
+                                    <button class="product__basket" type="button">
+                                        <span class="lnr lnr-cart product__cart"></span>
+                                        <span class="product__counter product__counter--blue">68</span>
+                                        <span class="visually-hidden">Add to basket</span>
+                                    </button>
                                 </div>
                             </article>
-                            <article class="product font__product mix category-wordpress category-popular">
-                                <div class="product__link">
-                                    <a href="#" class="product__bgimg"
-                                        style="background-image: url(images/page_template.jpg);"></a>
-                                    <div class="product__bgimg-link">
-                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                            <article class="product mix category-wordpress category-popular">
+                                <div class="miniature product__header">
+                                    <img class="image product__img" src="images/page_template.jpg" alt="Page template">
+                                    <div class="product__hover">
+                                        <a class="btn btn--transp btn--middle product__hover-btn">
                                             More Info
-                                        </button>
-                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                        </a>
+                                        <a class="btn btn--white btn--middle product__hover-btn">
                                             Live Demo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="product__content indent__content">
-                                    <a href="#" class="product__content-title font__title">
+                                <div class="product__content">
+                                    <a href="#" class="title product__title">
                                         E-commerce Shopping Cart
                                     </a>
-                                    <div href="#" class="product__content-avtor">
-                                        <a class="photo indent__photo"
-                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                    <div href="#" class="product__author">
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__photo"
+                                                style="background-image: url(images/ThemeValley.jpg);"></span>
+                                            <span class="user__name product__name">
+                                                Design-Hub
+                                            </span>
                                         </a>
-                                        <a class="name indent__name">
-                                            Design-Hub
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__category"
+                                                style="background-image: url(images/wordpress.svg);"></span>
+                                            <span class="user__name product__designation">
+                                                Plugin
+                                            </span>
                                         </a>
-                                        <a href="#" class="engine engine__img-wordpress indent__img">Plugin</a>
                                     </div>
-                                    <p class="product__content-desc indent__desc">
+                                    <p class="product__desc">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </p>
                                 </div>
-                                <div class="product__content-info indent__info">
-                                    <div class="price">
-                                        <button class="price__btn font__price" type="button">
-                                            $10-50
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">90</span>
-                                            </div>
-                                            <div class="rating"></div>
-                                        </div>
-                                    </div>
-                                    <div class="statistics__link">
-                                        <span class="lnr lnr-cart"></span>
-                                        <span class="statistics__text-cart">45</span>
-                                    </div>
+                                <div class="product__footer">
+                                    <span class="product__price">
+                                        $10-50
+                                    </span>
+                                    <button class="product__favorite" type="button">
+                                        <span class="lnr lnr-heart product__heart"></span>
+                                        <span class="product__counter product__counter--grey">90</span>
+                                        <span class="visually-hidden">Add to favorite</span>
+                                    </button>
+                                    <span class="rating"></span>
+                                    <button class="product__basket" type="button">
+                                        <span class="lnr lnr-cart product__cart"></span>
+                                        <span class="product__counter product__counter--blue">45</span>
+                                        <span class="visually-hidden">Add to basket</span>
+                                    </button>
                                 </div>
                             </article>
-                            <article class="product font__product mix category-psdtemplete">
-                                <div class="product__link">
-                                    <a href="#" class="product__bgimg"
-                                        style="background-image: url(images/page_template.jpg);"></a>
-                                    <div class="product__bgimg-link">
-                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                            <article class="product mix category-psdtemplete">
+                                <div class="miniature product__header">
+                                    <img class="image product__img" src="images/page_template.jpg" alt="Page template">
+                                    <div class="product__hover">
+                                        <a class="btn btn--transp btn--middle product__hover-btn">
                                             More Info
-                                        </button>
-                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                        </a>
+                                        <a class="btn btn--white btn--middle product__hover-btn">
                                             Live Demo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="product__content indent__content">
-                                    <a href="#" class="product__content-title font__title">
+                                <div class="product__content">
+                                    <a href="#" class="title product__title">
                                         Marketify Coffee Shop
                                     </a>
-                                    <div href="#" class="product__content-avtor">
-                                        <a class="photo indent__photo"
-                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                    <div href="#" class="product__author">
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__photo"
+                                                style="background-image: url(images/ThemeValley.jpg);"></span>
+                                            <span class="user__name product__name">
+                                                AazzTech
+                                            </span>
                                         </a>
-                                        <a class="name indent__name">
-                                            AazzTech
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__category"
+                                                style="background-image: url(images/psd.svg);"></span>
+                                            <span class="user__name product__designation">
+                                                PSD
+                                            </span>
                                         </a>
-                                        <a href="#" class="engine engine__img-psd indent__img">PSD</a>
                                     </div>
-                                    <p class="product__content-desc indent__desc">
+                                    <p class="product__desc">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </p>
                                 </div>
-                                <div class="product__content-info indent__info">
-                                    <div class="price">
-                                        <button class="price__btn font__price" type="button">
-                                            $10-50
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">48</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="statistics__link">
-                                        <span class="lnr lnr-cart"></span>
-                                        <span class="statistics__text-cart">50</span>
-                                    </div>
+                                <div class="product__footer">
+                                    <span class="product__price">
+                                        $10-50
+                                    </span>
+                                    <button class="product__favorite" type="button">
+                                        <span class="lnr lnr-heart product__heart"></span>
+                                        <span class="product__counter product__counter--grey">48</span>
+                                        <span class="visually-hidden">Add to favorite</span>
+                                    </button>                                    
+                                    <button class="product__basket" type="button">
+                                        <span class="lnr lnr-cart product__cart"></span>
+                                        <span class="product__counter product__counter--blue">50</span>
+                                        <span class="visually-hidden">Add to basket</span>
+                                    </button>
                                 </div>
                             </article>
-                            <article class="product font__product mix category-landing category-popular">
-                                <div class="product__link">
-                                    <a href="#" class="product__bgimg"
-                                        style="background-image: url(images/page_template.jpg);"></a>
-                                    <div class="product__bgimg-link">
-                                        <button class="product__bgimg-btn product__bgimg-btn--more" type="button">
+                            <article class="product mix category-landing category-popular">
+                                <div class="miniature product__header">
+                                    <img class="image product__img" src="images/page_template.jpg" alt="Page template">
+                                    <div class="product__hover">
+                                        <a class="btn btn--transp btn--middle product__hover-btn">
                                             More Info
-                                        </button>
-                                        <button class="product__bgimg-btn product__bgimg-btn--demo" type="button">
+                                        </a>
+                                        <a class="btn btn--white btn--middle product__hover-btn">
                                             Live Demo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="product__content indent__content">
-                                    <a href="#" class="product__content-title font__title">
+                                <div class="product__content">
+                                    <a href="#" class="title product__title">
                                         Bryson - Portfolio Template
                                     </a>
-                                    <div href="#" class="product__content-avtor">
-                                        <a class="photo indent__photo"
-                                            style="background-image: url(images/ThemeValley.jpg); width: 30px; height: 30px;">
+                                    <div href="#" class="product__author">
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__photo"
+                                                style="background-image: url(images/ThemeValley.jpg);"></span>
+                                            <span class="user__name product__name">
+                                                Coder-Lab
+                                            </span>
                                         </a>
-                                        <a class="name indent__name">
-                                            Coder-Lab
+                                        <a href="#" class="user">
+                                            <span class="user__photo product__category"
+                                                style="background-image: url(images/html.svg);"></span>
+                                            <span class="user__name product__designation">
+                                                HTML
+                                            </span>
                                         </a>
-                                        <a href="#" class="engine engine__img-html indent__img">HTML</a>
                                     </div>
-                                    <p class="product__content-desc indent__desc">
+                                    <p class="product__desc">
                                         Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
                                         scelerisque
                                         the mattis, leo quam aliquet congue.
                                     </p>
                                 </div>
-                                <div class="product__content-info indent__info">
-                                    <div class="price">
-                                        <button class="price__btn font__price" type="button">
-                                            $10
-                                        </button>
-                                        <div class="statistics">
-                                            <div class="statistics__link">
-                                                <span class="lnr lnr-heart"></span>
-                                                <span class="statistics__text-heart">56</span>
-                                            </div>
-                                            <div class="rating"></div>
-                                        </div>
-                                    </div>
-                                    <div class="statistics__link">
-                                        <span class="lnr lnr-cart"></span>
-                                        <span class="statistics__text-cart">68</span>
-                                    </div>
+                                <div class="product__footer">
+                                    <span class="product__price">
+                                        $10
+                                    </span>
+                                    <button class="product__favorite" type="button">
+                                        <span class="lnr lnr-heart product__heart"></span>
+                                        <span class="product__counter product__counter--grey">56</span>
+                                        <span class="visually-hidden">Add to favorite</span>
+                                    </button>
+                                    <span class="rating"></span>
+                                    <button class="product__basket" type="button">
+                                        <span class="lnr lnr-cart product__cart"></span>
+                                        <span class="product__counter product__counter--blue">68</span>
+                                        <span class="visually-hidden">Add to basket</span>
+                                    </button>
                                 </div>
-                            </article>
+                            </article>     
                         </div>
-                        <div class="products__box-new">
-                            <button type="button" data-filter=".category-popular" class="products__box-button">
-                                All New Products
-                            </button>
-                        </div>
+                        <button type="button" data-filter=".category-popular"
+                            class="btn btn--blue btn--big product__hover-btn">
+                            All New Products
+                        </button>
                     </div>
                 </div>
             </div>
