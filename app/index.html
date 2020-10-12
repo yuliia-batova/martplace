@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container">                
+            <div class="container">
                 <div class="header__inner">
                     <a class="logo" href="#">
                         <img src="images/logo.png" alt="logo">
@@ -37,7 +37,7 @@
                         </a>
                     </div>
                     <a href="#" class="user">
-                        <span class="user__photo" style="background-image: url(images/Taofiq_Hakim.jpg);"></span>                       
+                        <span class="user__photo" style="background-image: url(images/Taofiq_Hakim.jpg);"></span>
                         <span class="user__name">
                             Taofiq Hakim <span class="user__money">$20.45</span>
                         </span>
@@ -84,7 +84,7 @@
                         <input class="header__search-input" id="search-1" name="header__search" type="search"
                             placeholder="Search product here..." required>
                         <button class="header__search-btn" type="submit">
-                            <span class="lnr lnr-magnifier header__icon header__icon--font"></span>
+                            <span class="lnr lnr-magnifier header__icon header__icon--magnifier"></span>
                             <span class="visually-hidden">Go</span>
                         </button>
                     </form>
@@ -115,21 +115,25 @@
                         </a>
                     </div>
                 </div>
-                <div class="intro__search">
-                    <form class="intro__search-form">
-                        <label for="search-2" class="intro__search-lbl">
-                            <span class="visually-hidden">Search your products...</span>
-                        </label>
-                        <input class="intro__search-input" id="search-2" name="intro__search" type="search"
-                            placeholder="Search your products..." required>
-                        <select class="intro__search-select" name="All_Categories"
-                            style="background-image: url(images/drop-down.svg);">
-                            <option selected>All Categories</option>
-                        </select>
-                        <button class="intro__search-btn" type="submit" name="intro__btn">
-                            Search Now
-                        </button>
-                    </form>
+                <div class="intro__footer">
+                    <div class="intro__search">
+                        <form class="intro__search-form">
+                            <label for="search-2" class="intro__search-lbl">
+                                <span class="visually-hidden">Search your products...</span>
+                            </label>
+                            <input class="intro__search-input" id="search-2" name="intro__search" type="search"
+                                placeholder="Search your products..." required>
+                            <select class="intro__search-select" name="All_Categories"
+                                style="background-image: url(images/drop-down.png);">
+                                <option selected>All Categories</option>
+                            </select>
+                            <button class="btn btn--blue intro__search-btn" type="submit" name="intro__btn">
+                                Search Now
+                            </button>
+                        </form>
+                    </div>
+                    <div class="intro__box intro__box--m"></div>
+                    <div class="intro__box intro__box--sm"></div>
                 </div>
             </div>
         </section>
@@ -320,7 +324,7 @@
                                         <span class="lnr lnr-heart product__heart"></span>
                                         <span class="product__counter product__counter--grey">90</span>
                                         <span class="visually-hidden">Add to favorite</span>
-                                    </button>                                    
+                                    </button>
                                     <button class="product__basket" type="button">
                                         <span class="lnr lnr-cart product__cart"></span>
                                         <span class="product__counter product__counter--blue">246</span>
@@ -374,13 +378,13 @@
                                         <span class="lnr lnr-heart product__heart"></span>
                                         <span class="product__counter product__counter--grey">48</span>
                                         <span class="visually-hidden">Add to favorite</span>
-                                    </button>                                   
+                                    </button>
                                     <button class="product__basket" type="button">
                                         <span class="lnr lnr-cart product__cart"></span>
                                         <span class="product__counter product__counter--blue">50</span>
                                         <span class="visually-hidden">Add to basket</span>
                                     </button>
-                                </div>    
+                                </div>
                             </article>
                             <article class="product mix category-sitetemplete">
                                 <div class="product__header">
@@ -538,7 +542,7 @@
                                         <span class="lnr lnr-heart product__heart"></span>
                                         <span class="product__counter product__counter--grey">48</span>
                                         <span class="visually-hidden">Add to favorite</span>
-                                    </button>                                    
+                                    </button>
                                     <button class="product__basket" type="button">
                                         <span class="lnr lnr-cart product__cart"></span>
                                         <span class="product__counter product__counter--blue">50</span>
@@ -600,7 +604,7 @@
                                         <span class="visually-hidden">Add to basket</span>
                                     </button>
                                 </div>
-                            </article>     
+                            </article>
                         </div>
                         <button type="button" data-filter=".category-popular"
                             class="btn btn--blue btn--big product__hover-btn">
