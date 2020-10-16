@@ -14,7 +14,8 @@ $(function(){
         prevArrow: '<button class="slick-arrow slick-prew"><span class="lnr lnr-chevron-left"></span></button>',
         nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></button>',
       });
-      
-      
+      $('.products__filter').on('click', function(){
+        $('.list').slideToggle();
+      });      
       var mixer=mixitup(".products__inner--flex");
 });
