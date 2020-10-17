@@ -19,6 +19,11 @@ li {
     padding: 0;
     list-style: none;
 }
+button,
+input,
+select {
+ outline: none;
+}
 
 body {
     font-family: 'Quicksand', sans-serif;
@@ -35,36 +40,14 @@ body {
     padding: 0 15px;
 }
 
-// .desc {
-//     left: 0;
-//     right: 0;
-//     margin: 0 auto;
-// }
 
 .lnr {
     font-family: 'Linearicons-Free';
 }
 
-// .products__title {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-bottom: 52px;    
-//     border-radius: 4px;
-//     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);  
-//     background-color: $color-white;
-// } 
-// .title {
-//     font-size: 30px;    
-//     color: $color-black;    
-//     min-height: 110px;
-//     padding-left: 30px;
-//     padding-top: 40px;    
-// }
 
-// button {
-//     outline-width: 0;
-// }
+
+
 
 
   
