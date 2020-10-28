@@ -64,6 +64,18 @@
     border-radius: 18px;
 }
 
+.btn,
+.slick-prew,
+.slick-next,
+.slider__basket,
+.product__basket,
+.footer__social-link {
+    transition: transform .5s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 .header__info {
     margin-right: 45px;
     margin-bottom: -4px;
@@ -183,6 +195,11 @@
         line-height: 2.8;
         text-transform: uppercase;
         color: $color-grey;
+        transition: color,transform .5s;
+        &:hover {
+            color: $color-blue;
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -349,7 +366,7 @@
 .features__item,
 .advantages__item {
     border-radius: 4px;
-    max-width: 361px;    
+    max-width: 361px;
     text-align: center;
     color: #2b2b2b;
 }
@@ -645,6 +662,12 @@
     padding-right: 28px;
     border: none;
     background-color: transparent;
+    cursor: pointer;   
+    transition: color,transform .5s; 
+    &:hover {
+        color: $color-blue;
+        transform: scale(1.2);
+    }
 }
 
 .list {
@@ -671,6 +694,7 @@
         border-right: 6px solid transparent;
     }
     &__link {
+        color: #747b86;
         white-space: nowrap;
         transition: color 0.5s;
         &:hover {
@@ -803,10 +827,8 @@
     padding: 0 32px;
     margin-right: 5px;
     font-weight: 400;
-    font-size: 16px;
-    color: $color-white;
-    line-height: 3.4;
-    background-color: rgb(6, 116, 236);
+    font-size: 16px;    
+    line-height: 3.4;    
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
 }
 .statistics {
@@ -919,7 +941,7 @@
 .service {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 .service__sell,
@@ -1050,7 +1072,7 @@
 
 .news__item-title {
     font-weight: 600px;
-    font-size: 22px;    
+    font-size: 22px;
     line-height: 1.6;
 }
 
@@ -1083,17 +1105,16 @@
 }
 .news__footer {
     display: flex;
-    justify-content: space-between;   
-    
+    justify-content: space-between;
 }
 
 .news__date {
     width: 50%;
-    border-right: 1px solid #ececec;   
-    text-align: left; 
+    border-right: 1px solid #ececec;
+    text-align: left;
 }
 
-.news__reviews{
+.news__reviews {
     width: 50%;
     text-align: right;
 }
@@ -1108,25 +1129,25 @@
 .support__item {
     padding: 63px 128px 57px 85px;
     width: 50%;
-    text-align: center;    
+    text-align: center;
     &--support {
-        padding-left: 113px;        
-    }    
+        padding-left: 113px;
+    }
 }
 
-.support__item-img {    
+.support__item-img {
     margin-bottom: 22px;
     min-height: 120px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;   
+    background-position: center;
 }
 
 .support__title {
     font-size: 24px;
     line-height: 1.5;
     &--blue {
-        color: $color-blue;        
+        color: $color-blue;
     }
     &--violet {
         color: $color-violet;
@@ -1134,9 +1155,9 @@
 }
 
 .banner {
-    background: linear-gradient(to left, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+    background: linear-gradient(to left, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
     opacity: 0.9;
-}  
+}
 
 .banner__inner {
     padding: 90px 305px 110px;
@@ -1156,7 +1177,175 @@
     line-height: 1;
     color: #e7e7e7;
 }
-    
+
+.footer {
+    background-color: $color-bg;
+}
+
+.footer__inner {
+    display: flex;
+    padding: 90px 0 97px;
+}
+
+.footer__contacts {
+    max-width: 268px;
+    margin-right: 72px;
+}
+
+.footer__logo {
+    margin-left: 0;
+}
+
+.footer__text {
+    margin: 0 0 5px 0;
+    font-size: 15px;
+    color: #ababab;
+    font-style: normal;
+}
+
+.footer__desc {
+    margin-bottom: 18px;
+    &--input {
+        margin-bottom: 30px;
+    }
+}
+
+.footer__connection {
+    position: relative;
+    padding-left: 30px;   
+    &:hover {
+        color: $color-blue;
+    }  
+}
+
+.footer__connection-icon {
+    color: $color-white;
+    margin-right: 12px;
+    position: absolute;
+    left: 0;    
+    top: 23%;
+    &--indent {
+        top: 38%;
+    }
+}
+
+.footer__about-company {
+    max-width: 130px;
+    margin-right: 120px;
+}
+
+.footer__title {
+    margin: 30px 0 21px;
+    font-size: 18px;
+    line-height: 2.2;
+    color: $color-white;
+}
+
+.footer__list-link {
+    line-height: 1.5;
+    margin-bottom: 8px;      
+}
 
 
+.footer__link-white {
+    color: #ababab;    
+    &:hover {
+        color: $color-blue;
+    }  
+}
+
+.footer__support {
+    max-width: 150px;
+    margin-right: 55px;
+}
+
+.footer__newslette {
+    max-width: 358px;
+
+}
+
+.footer__subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 360px;
+    width: 100%;
+    min-height: 50px;
+    font-size: 15px;
+    line-height: 2;
+    color: $color-search;    
+    border-radius: 22px;
+    background-color: $color-white;    
+    margin-bottom: 48px;
+}
+
+.footer__subscribe-input {
+    display: block;
+    width: 100%;
+    margin-left: 22px;
+    margin-bottom: 4px;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.footer__subscribe-btn {
+    max-width: 107px;
+    width: 100%;
+    min-height: 50px;
+    background-color: $color-blue;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.footer__bottom {
+    background-color: #192027;
+}
+
+.footer__bottom-text {
+    padding: 33px 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #999999;
+    &--white {
+        color: $color-white;
+    }
+}
+
+.footer__social-list {
+    display: inline-block;
+    margin-right: 9px;
+}
+
+.footer__social-link {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center;    
+    &--darkblue {
+        background-color: #395799;
+    }
+    &--blue {
+        background-color: #19b2f5;
+    }
+    &--orange {
+        background-color: #f05b44;
+    }
+    &--red {
+        background-color: #9c0c1c;
+    }
+    &--pink {
+        background-color: #ea4c89;
+    }
+}
+
+.footer__social-icon {
+    font-size: 16px;
+    line-height: 2.6;
+    color: $color-white;
+}
   
