@@ -3,9 +3,28 @@ html {
 }
 
 *,
-*::before, 
+*::before,
 *::after {
     box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
 }
 
 a {
@@ -19,14 +38,15 @@ li {
     padding: 0;
     list-style: none;
 }
+
 button,
 input,
 select {
- outline: none;
+    outline: none;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -40,14 +60,36 @@ body {
     padding: 0 15px;
 }
 
-
 .lnr {
-    font-family: 'Linearicons-Free';
+    font-family: "Linearicons-Free";
 }
 
-
-
-
-
-
-  
+.breadcrumbs {
+    &__list {
+        display: inline-block;
+        position: relative;        
+        & + .breadcrumbs__list {
+            padding-left: 20px;
+            &::before {
+                content: "/";
+                position: absolute;
+                left: 3px;
+                color: $color-white;            
+            }            
+        }
+      
+    }
+    
+    &__link {
+        font-size: 15px;
+        line-height: 1.5;
+        color: $color-white;        
+    }
+    &__menu {
+        .breadcrumbs__list:last-child {
+            .breadcrumbs__link {
+                color: #bfcad7;
+            }            
+        }
+    }
+}
